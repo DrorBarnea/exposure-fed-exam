@@ -7,6 +7,8 @@
   position: relative;
   border: 1px solid white;
 
+
+
   > div {
     visibility: hidden;
     background: rgba(0, 0, 0, 0.7);
@@ -18,7 +20,6 @@
     left: 0;
     color: white;
     padding: 15px;
-    text-align: center;
     text-align: center;
     box-sizing: border-box;
     white-space: pre;
@@ -44,7 +45,16 @@
     &:hover {
       color: white;
       border-color: white;
+         }
+
+    :active {
+      transform: scaleX(-1);
     }
   }
 }
+
+.image-flip {
+  animation: flipImage;
+}
+
 
